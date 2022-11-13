@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://menma-at-here.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,7 +11,8 @@
     "storybook": "start-storybook -p 6006 -s ./dist",
     "format": "prettier --write src/App.tsx",
     "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
-    "fix": "yarn run format && yarn run lint"
+    "fix": "yarn run format && yarn run lint",
+    "deploy": "yarn run build && gh-pages -d dist"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.42.1",
